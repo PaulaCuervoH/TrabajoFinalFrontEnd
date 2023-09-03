@@ -13,7 +13,7 @@
 .item-nav{
     display: none;
 }
-/* estilos para dispocitivos de 900 hacia abajo */
+/* estilos para dispositivos de 900 hacia abajo */
 /* elementos del header */
 .divHeader{
     display: flex;
@@ -38,6 +38,14 @@
 }
 /*Elementos del main y la sección con clase container1 */
 
+/* Container 1 */
+
+
+/* Container 2 y 5*/
+
+.container2, .container5{
+    background-color: #3CDDF3 ;
+}
 
 /* Container 3 */
 
@@ -62,13 +70,12 @@
     background-color:RGB(139, 72,191,30%);
     color: #323851;
     height: 43px;
-    position: relative;
-    left: 35px;
     padding: 10px;
-    padding-left: 45px;
+    padding-left: 53px;
+    margin-left: 35px;
 }
 
-.container3 .texto{
+.texto{
     padding: 10px;
     margin: 21px 17px 10px 0px;
 }
@@ -77,10 +84,21 @@
 
 .container4{
     text-align: center;
+    color: #B9B9C1;
+    margin: 58px 18px;
 }
+
+/* ocultar la dos ultimas tarjetas */
+.ocultar{
+    display:none;
+}
+
+/* Titulo */
+
 .container4 h2{
     color: #242E53;
     font-size: 40px;
+    padding-bottom: 20px;
 }
 
 .fotoPerfil{
@@ -88,22 +106,21 @@
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    bottom: 25px;
+    bottom: 33px;
 }
 
 .container4 article{
     background-color: #FAFAFA;
-    display: flex;
-    flex-direction: column;
-    align-items: center
+    padding: 10px;
+    margin: 45px 0px;
 }
 
+/* Boton */
 .More{
     background-color: #8B48BF;
     color: white;
     border: none;
     border-radius: 50px;
-    text-align: center;
     width: 134px;
     padding: 10px;
 }
@@ -117,30 +134,64 @@ footer{
     flex-direction: column;
     text-align: center;
     width: 100%;
+    padding: 32.5px;
 }
 
-footer .menuFooter{
-    order:-1;
-}
+/* Estilos article footer */
 
 .articleFooter{
     display: flex;
     flex-direction: column-reverse; 
     flex-wrap: wrap;
+    padding: 12.5px;
 }
 
 .redes{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 25px;
 }
 
+/* Estilos del menu */
+
+.menuFooter{
+    order:-1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 12.5px;
+}
+
+.menuFooter ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.menuFooter li{
+    width: 50%;
+    list-style-type: none;
+    padding: 6px;
+}
+
+.menuFooter a{
+    text-decoration: none;
+}
+
+.menuFooter a:visited, a:visited {
+    color: white;
+}
+
+/* Estilos formulario */
 footer form{
     order:-2;
+    padding: px;
 }
 
 #inbox{
-    width: 308px;
+    width: 308px; /* FALTA ARREGLAR EL WIDHT */
     padding: 10px;
     border: none;
     border-radius: 50px;
@@ -156,16 +207,19 @@ footer form{
     padding: 10px;
 }
 
+/* Estilo parrafo pie */
 footer p{
     color: #8C8C94;
     font-size: 12.5px;
     font-weight: bold;
+    padding: 12.5px;
 }
 
 /* Establece el elemento para que aparezca cuando el ancho de la pantalla sea mayor a 900px */
 
 @media(min-width:900px){
 
+    /* Header */
     .divHeader{
         height: 100px;
         display: flex;
@@ -191,6 +245,40 @@ footer p{
     .navHambur{
         display: none;
         }
+    
+    /* Container 1 */
+
+    /* Container 2 y 5 */
+
+    /* Container 3 */
+    .container3{
+        background: rgba(250, 250, 250, 1);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 50px;
+        margin: 0px;
+    }
+
+    .container3 article{
+        width: 50%;
+        padding: 12px 25px;
+    }
+
+    .container3 h3{
+        background: rgba(250, 250, 250, 1);
+        padding: 10px 10px 10px 88px;
+        margin: 0px;
+    }
+
+    .texto{
+        padding-left: 88px;
+    }
+    /* container 4 */
+
+    .ocultar{
+        display: block;
+    }
 }
 
 
