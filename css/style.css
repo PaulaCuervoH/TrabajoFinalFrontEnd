@@ -278,7 +278,7 @@ footer p{
     /* container 4 */
 
     .ocultar{
-        display: ;
+        display: block;
     }
     .containerAvatares{
         display: flex;
