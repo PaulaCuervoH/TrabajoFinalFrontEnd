@@ -187,14 +187,15 @@ footer{
 /* Estilos formulario */
 footer form{
     order:-2;
-    padding: px;
 }
 
 #inbox{
-    width: 308px; /* FALTA ARREGLAR EL WIDHT */
+    min-width: 201px;
+    max-width: 308px; /* FALTA ARREGLAR EL WIDHT */
     padding: 10px;
     border: none;
     border-radius: 50px;
+    min-width: 201px;
 }
 
 #go{
@@ -277,8 +278,42 @@ footer p{
     /* container 4 */
 
     .ocultar{
-        display: block;
+        display: ;
     }
+    .containerAvatares{
+        display: flex;
+    }
+
+
+    /* Footer */
+    Footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .articleFooter{
+        width: 30%;
+        order: -1;
+        display: flex;
+    }
+
+    Footer form{
+        width: 30%;
+        order:0;
+    }
+
+    .menuFooter{
+        width: 30%;
+    }
+
+    footer p{
+        display: inline;
+        align-self: self-end;
+    }
+
 }
 
 
