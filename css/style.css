@@ -1,15 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 *{
     font-family: 'Be Vietnam Pro', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* Oculta el elemento por defecto */
+.contactoHeader{
+    display: none;
 }
 
-main{
-    border: 1px solid black;
-    width: 480px; 
+.item-nav{
+    display: none;
 }
+/* estilos para dispocitivos de 900 hacia abajo */
+/* elementos del header */
+.divHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.logoHeader{
+    margin: 30px;
+}
+
+.navHambur{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    border-color: black;
+}
+.navHambur span{
+    width: 30px;
+    height: 4px;
+    background: black;
+    margin-bottom: 5px
+}
+/*Elementos del main y la sección con clase container1 */
+
 
 /* Container 3 */
 
@@ -134,6 +162,36 @@ footer p{
     font-weight: bold;
 }
 
+/* Establece el elemento para que aparezca cuando el ancho de la pantalla sea mayor a 900px */
+
+@media(min-width:900px){
+
+    .divHeader{
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+            }
+    .contactoHeader{
+        display: block;
+        background-color:#8B48BF;
+        color: white;
+        height: 35%;
+        width: 8%;
+        border-radius: 50px;
+    }
+    .item-nav{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    .item-nav a{
+        text-decoration: none;
+    }
+    .navHambur{
+        display: none;
+        }
+}
 
 
 
