@@ -29,23 +29,56 @@
     display: flex;
     flex-direction: column;
     border-color: black;
+    padding-right: 50px;
 }
 .navHambur span{
     width: 30px;
     height: 4px;
     background: black;
+    line-height: 20%;
     margin-bottom: 5px
 }
-/*Elementos del main y la sección con clase container1 */
+/* container1 */
 
-/* Container 1 */
+.deportista{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+h1{
+    color: #242E53;
+    font-weight: 400px;
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 120px;
+}
+.live{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    line-height: 30px;
+    padding-right: 50px;
+}
+.live p{
+   font-size: 18px;
+   margin: 20px 0px 20px 0px;
+}
+.contacto1{
+    background-color:#8B48BF;
+    color: white;
+    height: 44px;
+    width:134px;
+    border-radius: 50px;
+    text-align: center;
 
-
+}
 /* Container 2 y 5*/
 
 .container2, .container5{
     background-color: #3CDDF3 ;
 }
+
 
 /* Container 3 */
 
@@ -141,7 +174,7 @@ footer{
 
 .articleFooter{
     display: flex;
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     padding: 12.5px;
 }
@@ -216,41 +249,6 @@ footer p{
     padding: 12.5px;
 }
 
-/* Establece el elemento para que aparezca cuando el ancho de la pantalla sea mayor a 900px */
-
-@media(min-width:900px){
-
-    /* Header */
-    .divHeader{
-        height: 100px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-            }
-    .contactoHeader{
-        display: block;
-        background-color:#8B48BF;
-        color: white;
-        height: 35%;
-        width: 8%;
-        border-radius: 50px;
-    }
-    .item-nav{
-        display: flex;
-        justify-content: space-around;
-        width: 40%;
-    }
-    .item-nav a{
-        text-decoration: none;
-    }
-    .navHambur{
-        display: none;
-        }
-    
-    /* Container 1 */
-
-    /* Container 2 y 5 */
-
     /* Container 3 */
     .container3{
         background: rgba(250, 250, 250, 1);
@@ -280,6 +278,63 @@ footer p{
     .ocultar{
         display: block;
     }
+
+
+/* Establece el elemento para que aparezca cuando el ancho de la pantalla sea mayor a 900px */
+
+@media(min-width:900px){
+
+    /* Header */
+    .divHeader{
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        }
+    .contactoHeader{
+        display: block;
+        background-color:#8B48BF;
+        color: white;
+        height: 44px;
+        width: 134px;
+        border-radius: 50px;
+    }
+    .item-nav{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    .item-nav a{
+        text-decoration: none;
+    }
+    .navHambur{
+        display: none;
+        }
+ /* container 1 */
+    .container1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .deportista{
+        display: block;
+        width: 560px;
+        height: 461px;
+    }
+    .live{
+        margin-right: 3%;
+    }
+    .contacto1{
+        background-color:#8B48BF;
+        color: white;
+        height: 44px;
+        width:134px;
+        border-radius: 50px;
+        text-align: center;
+    }
+
     .containerAvatares{
         display: flex;
     }
@@ -314,8 +369,6 @@ footer p{
         align-self: self-end;
     }
 
+
 }
-
-
-
 
