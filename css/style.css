@@ -1,4 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 *{
     font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
 }
+
+main{
+    border: 1px solid black;
+    width: 480px; 
+}
+
+/* Container 3 */
+
+.container3{
+    color: #B3B2B7;
+    margin: 65px 0px 65px 34px;
+}
+
+.numeracion{
+    background-color:hsl(274, 48%, 52%);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 70px;
+    height: 43px;
+    position: absolute;
+    z-index: 2;
+    padding: 10px;
+}
+
+.container3 h3{
+    background-color:RGB(139, 72,191,30%);
+    color: #323851;
+    height: 43px;
+    position: relative;
+    left: 35px;
+    padding: 10px;
+    padding-left: 45px;
+}
+
+.container3 .texto{
+    padding: 10px;
+    margin: 21px 17px 10px 0px;
+}
+
+/* Container 4 */
+
+.container4{
+    text-align: center;
+}
+.container4 h2{
+    color: #242E53;
+    font-size: 40px;
+}
+
+.fotoPerfil{
+    position: relative;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    bottom: 25px;
+}
+
+.container4 article{
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.More{
+    background-color: #8B48BF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    width: 134px;
+    padding: 10px;
+}
+
+/* Footer */
+
+footer{
+    background-color: black;
+    display: flex;
+    color: #FAFAFA;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+footer .menuFooter{
+    order:-1;
+}
+
+.articleFooter{
+    display: flex;
+    flex-direction: column-reverse; 
+    flex-wrap: wrap;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer form{
+    order:-2;
+}
+
+#inbox{
+    width: 308px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+#go{
+    background-color: #8B48BF;
+    color: #A0A0A0;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    width: 63px;
+    padding: 10px;
+}
+
+footer p{
+    color: #8C8C94;
+    font-size: 12.5px;
+    font-weight: bold;
+}
+
+
+
+
+
