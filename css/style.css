@@ -216,7 +216,7 @@ footer{
     flex-direction: column;
     text-align: center;
     width: 100%;
-    padding: 32.5px;
+    padding: 32.5px 50px;
 }
 
 /* Estilos article footer */
@@ -225,13 +225,13 @@ footer{
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    padding: 12.5px;
+    padding: 12.5px 0px;
 }
 
 .redes{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 25px;
 }
 
@@ -242,21 +242,22 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 10px;
-    margin: 12.5px;
+    padding: 12.5px;
+
 }
 
 .menuFooter ul{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .menuFooter li{
     width: 50%;
     list-style-type: none;
-    padding: 6px;
     text-align:left;
+    padding: 5px;
 }
 
 .menuFooter a{
@@ -270,6 +271,7 @@ footer{
 /* Estilos formulario */
 footer form{
     order:-2;
+    padding: 12.5px 0px;
 }
 
 #inbox{
@@ -283,7 +285,6 @@ footer form{
 #go{
     background-color: #8B48BF;
     color: white;
-    
     border: none;
     border-radius: 50px;
     text-align: center;
@@ -428,37 +429,46 @@ footer p{
     }
     
     /* Footer para pantalla escritorio*/
-
     Footer{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
-        justify-content: center;
+        justify-content: space-between;
+    }
+    /* Articulo footer */
+
+    .redes{
+        order:-1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-bottom: 25px;
     }
 
     .articleFooter{
         width: 30%;
         order: -1;
-        display: flex;
     }
+    /* Formulario */
 
     Footer form{
         width: 30%;
         order:0;
     }
-
-    .menuFooter{
-        width: 30%;
+    #inbox{
+        width: 201px ;
     }
 
+    /* Menu */
+    .menuFooter{
+        width: 50%;
+    }
+
+    /* Parrafo footer */
     footer p{
         display: inline;
         align-self: self-end;
-    }
-
-    #inbox{
-        width: 201px ;
     }
 }
 
