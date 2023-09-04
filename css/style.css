@@ -76,9 +76,48 @@ h1{
 
 }
 /* Container 2 y 5*/
-
 .container2, .container5{
     background-color: #3CDDF3 ;
+    color: white;
+    height: 380px;
+    margin-top: 10%;
+}
+.cambioTituloContainer2{
+    display: none;
+}
+.cambioParrafoContainer2{
+    display: none;
+}
+.cambiotituloConteiner5{
+    display: none;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.container2 h2{
+   font-size: 36px;
+   font-weight: 700px;
+}
+/* .container5 */
+.container5{
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.goFor{
+    background-color: #232C50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 134px;
+    padding: 10px;
 }
 
 /* Container 3 */
@@ -267,6 +306,7 @@ footer p{
         display: flex;
         justify-content: space-around;
         align-items: center;
+
         }
 
     .contactoHeader{
@@ -349,6 +389,41 @@ footer p{
     .ocultar{
         display: block;
     }
+    /* container2 */
+    .container2, .container5{
+        background: #8B48BF;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .cambioTituloContainer2{
+        display: block;
+    }
+    .cambioParrafoContainer2{
+        display: block;
+    }
+    .tituloContainer2{
+        display: none;
+    }
+    .parrafoContainer2{
+        display: none;
+    }
+   /*  Container 5 */
+    .cambiotituloConteiner5{
+        display: block;
+    }
+    .tituloConteiner5{
+        display: none;
+    }
+    .goFor{
+        background: white;
+        color: #8B48BF;
+        height: 12%;
+        width: 10%;
+    }
+    /* Footer */
 
     .containerAvatares{
         display: flex;
@@ -383,9 +458,45 @@ footer p{
     footer p{
         display: inline;
     }
+    .containerAvatares{
+        display: flex;
+    }
+
+
+    /* Footer */
+    Footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .articleFooter{
+        width: 30%;
+        order: -1;
+        display: flex;
+    }
+
+    Footer form{
+        width: 30%;
+        order:0;
+    }
+
+    .menuFooter{
+        width: 30%;
+    }
+
+    footer p{
+        display: inline;
+        align-self: self-end;
+    }
+
 
     #inbox{
         width: 201px ;
     }
-}
 
+
+
+}
