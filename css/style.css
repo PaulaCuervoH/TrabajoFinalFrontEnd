@@ -345,7 +345,7 @@ footer p{
 /* container 1 para pantalla escritorio*/
     .container1{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         padding: 86px 180px ;
     }
@@ -368,7 +368,6 @@ footer p{
     }
 
     /* Container 2 y 5 para pantalla escritorio */
-    
     /* container2 */
 
     .parrafoMovil{
@@ -382,11 +381,42 @@ footer p{
         background: #8B48BF;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
+        padding: 0px 40px; 
+        height: 168px; 
+    }
+    .container2 h2{
+        width: 450px;
+        height: 88px;
+        line-height: 120%;
+
+    }
+    .parrafoEscritorio{ 
+        width: 450px;
+        height: 88px;
     }
 
    /*  Container 5 */
 
+    .container5{
+        height: 224px;
+        justify-content: space-between;
+        padding: 0px 180px;
+        
+    }
+   .container5 h2{
+        width: 393px;
+        height: 96px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 48px;
+   }
+   .container5 button{
+        width: 134px;
+        height: 44px;
+   }
     .goFor{
         background: white;
         color: #8B48BF;
