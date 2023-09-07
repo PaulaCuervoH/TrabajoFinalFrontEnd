@@ -4,7 +4,7 @@
     margin:0%;
     padding: 0%;
     box-sizing: border-box;
-    line-height: 30px;
+    line-height: 1.7em;
 }
 /* Oculta el elemento por defecto */
 .contactoHeader{
@@ -40,20 +40,21 @@ header{
 /* container1 */
 
 .container1{
-    padding: 24px 40px;
+    padding: 24px 40px 40PX;
 }
 
 .deportista{
     display: block;
     margin: 0 auto;
     width: 400px;
+    padding-bottom: 100px;
 }
 
 h1{
     color: #242E53;
     font-weight: 700;
     font-size: 50px;
-    line-height: 60px;
+    line-height: 1.25em;
 }
 
 .live{
@@ -67,14 +68,13 @@ h1{
     font-size: 18px;
     margin: 20px 0px 20px 0px;
     font-weight: 700;
-    line-height: 30px;
 }
 
-.contacto1{
+.contacto1, .contactoHeader, .More, .goFor{
     background-color:#8B48BF;
     color: white;
-    height: 44px;
-    width:134px;
+    width: 134px;
+    padding: 10px;
     border-radius: 50px;
     text-align: center;
     border: none;
@@ -84,39 +84,49 @@ h1{
 .container2, .container5{
     background-color: #3CDDF3 ;
     color: white;
-    height: 306px;
+}
+
+.parrafoEscritorio{
+    display: none;
 }
 
 .container2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 40px 42px 40px 20px;
+    padding: 40px 20px;
+    height: 306px;
 }
 .container2 h2{
-    font-size: 36px;
+    font-size: 2.25em;
     font-weight: 700px;
+    line-height: 1.25em;
 }
 
 .container2 p{
-    line-height: 25px;
+    padding-right: 20px;
 }
+
 /* .container5 */
 .container5{
+    height: 366px;
     font-weight: 700;
+    padding: 40px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     text-align: center;
+
 }
+
+.container5 h2{
+    font-size: 40px;
+}
+
 .goFor{
     background-color: #232C50;
     color: white;
-    border: none;
-    border-radius: 50px;
-    width: 134px;
-    padding: 10px;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -194,16 +204,7 @@ h1{
 }
 
 /* Boton */
-.More{
-    background-color: #8B48BF;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    width: 134px;
-    padding: 10px;
-}
-
-.More:active{
+.Morado:active{
     background-color: RGB(139, 72,191,70%);
 }
 
@@ -314,11 +315,6 @@ footer p{
 
     .contactoHeader{
         display: block;
-        background-color:#8B48BF;
-        color: white;
-        width: 134px;
-        padding: 10px;
-        border-radius: 50px;
         filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
@@ -351,20 +347,13 @@ footer p{
     }
     .deportista{
         padding-right: 50px;
+        padding-bottom: 0px;
         width: 540px;
     }
 
     .live{
         padding-left: 50px;
         width: 50%;
-    }
-    .contacto1{
-        background-color:#8B48BF;
-        color: white;
-        width:134px;
-        padding: 10px;
-        border-radius: 50px;
-        text-align: center;
     }
 
     /* Container 2 y 5 para pantalla escritorio */
@@ -405,23 +394,18 @@ footer p{
         padding: 0px 180px;
         
     }
-   .container5 h2{
+    .container5 h2{
         width: 393px;
         height: 96px;
         text-align: left;
         font-weight: bold;
         font-size: 2.4rem;
         line-height: 48px;
-   }
-   .container5 button{
-        width: 134px;
-        height: 44px;
-   }
+    }
+
     .goFor{
         background: white;
         color: #8B48BF;
-        height: 12%;
-        width: 10%;
     }
         /* Container 3  para pantalla escritorio */
     .container3{
@@ -429,7 +413,7 @@ footer p{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 50px;
+        padding: 40px;
         margin: 0px;
     }
     
@@ -460,48 +444,55 @@ footer p{
     
     /* Footer para pantalla escritorio*/
     Footer{
+        padding: 43px 160px ;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: baseline;
+        align-items: stretch;
         justify-content: space-between;
     }
     /* Articulo footer */
 
+    .articleFooter{
+        width: 20%;
+        order: -1;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
     .redes{
         order:-1;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        padding-bottom: 25px;
+        padding-bottom: 0;
     }
 
-    .articleFooter{
-        width: 30%;
-        order: -1;
-    }
-    /* Formulario */
-
-    Footer form{
-        width: 30%;
-        order:0;
-    }
-    #inbox{
-        width: 201px ;
+    .redes img{
+        margin:6px;
     }
 
     /* Menu */
     .menuFooter{
         width: 50%;
+        padding: 0px;
+    }
+
+    /* Formulario */
+
+    Footer form{
+        width: 30%;
+        order:0;
+        text-align: end;
+    }
+    
+    #inbox{
+        width: 201px;
     }
 
     /* Parrafo footer */
     footer p{
+        width: 100%;
+        text-align: right;
         display: inline;
-        align-self: self-end;
+        padding: 0px;
     }
 }
-
-/* 
-SOMBRA BOTONES
-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));*/
