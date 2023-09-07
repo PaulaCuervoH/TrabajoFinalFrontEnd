@@ -1,3 +1,14 @@
+##Descripción y distribución del trabajo en equipo
+
+Para la elaboración del trabajo utilizamos, visual Studio figma, git y GitHub.
+
+1. como equipo decidimos utilizar lo que hemos aprendido hasta el momento en este bimestre como es metodología de trabajo, utilizamos la metodología ágil el cual maquetamos el proyecto y dividimos en tareas pequeñas y completamente independientes, también utilizamos git y github que lo aprendimos en informática para la administración del código y la unión del proyecto.
+   
+2. Nos dividimos la maquetación en 5 containers, un header y un footer.
+  a. la aprendiz Paula trabajó en el footer y en el container 3 y 4
+  b. La aprendez Mayda trabajó en el header y en los container 1, 2 y 5.
+
+
 ## El reto
 
 Su desafío es crear esta página de destino y hacer que se parezca lo más posible al diseño.
