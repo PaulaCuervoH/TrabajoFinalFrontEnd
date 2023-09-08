@@ -433,6 +433,10 @@ footer p{
 
     /* container 4 para pantalla escritorio*/
     
+    .container4{
+        margin: 92px 18px 180px;
+    }
+
     .ocultar{
         display: block;
     }
@@ -473,7 +477,6 @@ footer p{
     .menuFooter{
         padding: 0px;
         width: 50%;
-       
     }
 
     /* Formulario */
@@ -492,6 +495,7 @@ footer p{
     footer p{
         display: inline;
         padding: 0px;
+        width: 100%;
         text-align: right;
     }
 }
